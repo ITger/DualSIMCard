@@ -1,0 +1,51 @@
+    public java.util.List android.telephony.TelephonyManager.getAllCellInfo() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getCallState() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getCdmaEriIconIndex() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getCdmaEriIconMode() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getCdmaEriText() declared by class android.telephony.TelephonyManager
+    public android.telephony.CellLocation android.telephony.TelephonyManager.getCellLocation() declared by class android.telephony.TelephonyManager
+    public final native java.lang.Class java.lang.Object.getClass() declared by class java.lang.Object
+    public java.lang.String android.telephony.TelephonyManager.getCompleteVoiceMailNumber() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getCurrentPhoneType() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getDataActivity() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getDataNetworkType() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getDataState() declared by class android.telephony.TelephonyManager
+    public static android.telephony.TelephonyManager android.telephony.TelephonyManager.getDefault() declared by class android.telephony.TelephonyManager
+    public static int android.telephony.TelephonyManager.getDefaultSubscription() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getDeviceId() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getDeviceSoftwareVersion() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getDualCardMode() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getGroupIdLevel1() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getIsimDomain() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getIsimImpi() declared by class android.telephony.TelephonyManager
+    public [Ljava.lang.String; android.telephony.TelephonyManager.getIsimImpu() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getLine1AlphaTag() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getLine1Number() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getLteOnCdmaMode() declared by class android.telephony.TelephonyManager
+    public static int android.telephony.TelephonyManager.getLteOnCdmaModeStatic() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getMsisdn() declared by class android.telephony.TelephonyManager
+    public java.util.List android.telephony.TelephonyManager.getNeighboringCellInfo() declared by class android.telephony.TelephonyManager
+    public static int android.telephony.TelephonyManager.getNetworkClass(int) declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getNetworkCountryIso() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getNetworkOperator() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getNetworkOperatorName() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getNetworkType() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getNetworkTypeName() declared by class android.telephony.TelephonyManager
+    public static java.lang.String android.telephony.TelephonyManager.getNetworkTypeName(int) declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getOperatorNumeric() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getPesn() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getPhoneType() declared by class android.telephony.TelephonyManager
+    public static int android.telephony.TelephonyManager.getPhoneType(int) declared by class android.telephony.TelephonyManager
+    public android.telephony.ServiceState android.telephony.TelephonyManager.getServiceState() declared by class android.telephony.TelephonyManager
+    public android.telephony.SignalStrength android.telephony.TelephonyManager.getSignalStrength() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getSimCountryIso() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getSimOperator() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getSimOperatorName() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getSimSerialNumber() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getSimState() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getSubscriberId() declared by class android.telephony.TelephonyManager
+    public static java.lang.String android.telephony.TelephonyManager.getTelephonyProperty(java.lang.String,int,java.lang.String) declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getVoiceMailAlphaTag() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getVoiceMailNumber() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getVoiceMessageCount() declared by class android.telephony.TelephonyManager
+    public int android.telephony.TelephonyManager.getVoiceNetworkType() declared by class android.telephony.TelephonyManager

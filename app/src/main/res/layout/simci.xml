@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/SimCardItem"
+    android:orientation="vertical"
+    android:divider="@android:color/darker_gray"
+    android:contentDescription="Multi SIM Reader">
+    <!-- style="@android:style/Theme.Holo.Light"-->
+
+
+
+    <TextView
+        android:id="@+id/SIMfirstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/SIMsecondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/icon"
+        android:singleLine="true"
+        android:text="Description"
+        android:paddingLeft="20dp" />
+
+</LinearLayout>

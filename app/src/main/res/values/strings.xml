@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dual SIM Card</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="DualSIMcardRes">SIM card 2</string>
+    <string name="dualSimIcon">dualSimIcon</string>
+    <string name="banner_ad_unit_id">ca-app-pub-2638943457717992/8702531863</string>
+
+</resources>

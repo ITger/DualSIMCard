@@ -1,0 +1,75 @@
+    public java.util.List android.telephony.MSimTelephonyManager.getAllCellInfo() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCallState() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCallState(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getCardType() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getCardType(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCdmaEriIconIndex() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCdmaEriIconIndex(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCdmaEriIconMode() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCdmaEriIconMode(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getCdmaEriText() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getCdmaEriText(int) declared by class android.telephony.MSimTelephonyManager
+    public android.telephony.CellLocation android.telephony.MSimTelephonyManager.getCellLocation() declared by class android.telephony.MSimTelephonyManager
+    public android.telephony.CellLocation android.telephony.MSimTelephonyManager.getCellLocation(int) declared by class android.telephony.MSimTelephonyManager
+    public final native java.lang.Class java.lang.Object.getClass() declared by class java.lang.Object
+    public java.lang.String android.telephony.MSimTelephonyManager.getCompleteVoiceMailNumber() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getCompleteVoiceMailNumber(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCurrentPhoneType() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getCurrentPhoneType(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getDataActivity() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getDataState() declared by class android.telephony.MSimTelephonyManager
+    public static android.telephony.MSimTelephonyManager android.telephony.MSimTelephonyManager.getDefault() declared by class android.telephony.MSimTelephonyManager
+    public static android.telephony.TelephonyManager android.telephony.TelephonyManager.getDefault() declared by class android.telephony.TelephonyManager
+    public int android.telephony.MSimTelephonyManager.getDefaultSubscription() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getDeviceId() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getDeviceId(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getDeviceSoftwareVersion() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getDeviceSoftwareVersion(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getIsimDomain() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getIsimImpi() declared by class android.telephony.TelephonyManager
+    public [Ljava.lang.String; android.telephony.TelephonyManager.getIsimImpu() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getLine1AlphaTag() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getLine1AlphaTag(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getLine1Number() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getLine1Number(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getLteOnCdmaMode() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getLteOnCdmaMode(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getMsisdn() declared by class android.telephony.TelephonyManager
+    public java.util.List android.telephony.TelephonyManager.getNeighboringCellInfo() declared by class android.telephony.TelephonyManager
+    public static int android.telephony.TelephonyManager.getNetworkClass(int) declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkCountryIso() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkCountryIso(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.TelephonyManager.getNetworkName() declared by class android.telephony.TelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkName(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkOperator() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkOperator(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkOperatorName() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkOperatorName(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getNetworkType() declared by class android.telephony.MSimTelephonyManager
+    public static int android.telephony.MSimTelephonyManager.getNetworkType(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getNetworkTypeName() declared by class android.telephony.MSimTelephonyManager
+    public static java.lang.String android.telephony.MSimTelephonyManager.getNetworkTypeName(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getPhoneCount() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.TelephonyManager.getPhoneType() declared by class android.telephony.TelephonyManager
+    public int android.telephony.MSimTelephonyManager.getPreferredDataSubscription() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getPreferredVoiceSubscription() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimCountryIso() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimCountryIso(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimOperator() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimOperator(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimOperatorName() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimOperatorName(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimSerialNumber() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSimSerialNumber(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getSimState() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getSimState(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSubscriberId() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getSubscriberId(int) declared by class android.telephony.MSimTelephonyManager
+    public static java.lang.String android.telephony.MSimTelephonyManager.getTelephonyProperty(java.lang.String,java.lang.String) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getVoiceMailAlphaTag() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getVoiceMailAlphaTag(int) declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getVoiceMailNumber() declared by class android.telephony.MSimTelephonyManager
+    public java.lang.String android.telephony.MSimTelephonyManager.getVoiceMailNumber(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getVoiceMessageCount() declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.MSimTelephonyManager.getVoiceMessageCount(int) declared by class android.telephony.MSimTelephonyManager
+    public int android.telephony.TelephonyManager.getVoiceRadioTechnology() declared by class android.telephony.TelephonyManager

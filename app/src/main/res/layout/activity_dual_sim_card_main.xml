@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DualSimCardMainActivity"
+    android:id="@+id/relLaySIMs"
+    android:nestedScrollingEnabled="false"
+    android:theme="@android:style/Theme.Holo"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dual SIM reader"
+        android:textSize="25sp"
+        android:id="@+id/textView"
+        android:gravity="top|center_vertical"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:shadowColor="#ff7f7f7f"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="8"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dualSIMimageView"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView"
+        android:contentDescription="@string/dualSimIcon"
+        android:clickable="false"
+        android:onClick="clockwise"
+        android:nestedScrollingEnabled="false" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:id="@+id/listView"
+        android:clickable="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:stackFromBottom="false"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        android:layout_above="@+id/adView"
+        android:paddingLeft="20dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>
