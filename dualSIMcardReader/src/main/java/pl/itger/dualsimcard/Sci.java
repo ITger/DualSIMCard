@@ -6,8 +6,8 @@ package pl.itger.dualsimcard;
  */
 
 public class Sci {
-    String s1;
-    String s2;
+    final String s1;
+    final String s2;
 
 
     public Sci(String s1, String s2) {
