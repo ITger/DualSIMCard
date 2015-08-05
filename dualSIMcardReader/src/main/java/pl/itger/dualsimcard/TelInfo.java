@@ -5,57 +5,54 @@ package pl.itger.dualsimcard;
  * Copyright 2015 Piotr Zerynger ITger
  */
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 import android.content.Context;
 import android.telephony.CellInfo;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
+
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
 
 import static pl.itger.dualsimcard.MainActivity.getMActContext;
 
 public final class TelInfo {
 
     private static TelInfo telInf;
+    protected Sci[] scitems;
+    ArrayList<Sci> scitemsArr;
     //private String imsiSIM1;
     private String imsiSIM2;
     private boolean isSIM1Ready;
     private boolean isSIM2Ready;
-
     private String sim1_STATE;
     private String sim2_STATE;
-
     // Integrated circuit card identifier (ICCID)
     private String sim1_ICCID;
     private String sim2_ICCID;
-
     // International mobile subscriber identity (IMSI)
     private String sim1_IMSI;
     private String sim2_IMSI;
-
     // Service provider name (SPN)
     private String sim1_SPN;
     private String sim2_SPN;
-
     // Mobile country code (MCC)
     private String sim1_MCC;
     private String sim2_MCC;
-
     // Mobile network code (MNC)
     private String sim1_MNC;
     private String sim2_MNC;
+
+    //private NeighboringCellInfo nci;
+
+    //private  List<NeighboringCellInfo> sim1_NC;
+    //private  List<NeighboringCellInfo> sim2_NC;
     private String sim1_MCC_MNC;
     private String sim2_MCC_MNC;
-
     // Mobile subscriber identification number (MSIN)
     // Mobile station international subscriber directory number (MSISDN)
     private String sim1_MSISDN;
     private String sim2_MSISDN;
-
-    //getDeviceId() Returns the unique device ID, for example, the IMEI for GSM and the MEID or ESN for CDMA phones.
-    private String sim1_IMEI;
-    private String sim2_IMEI;
 
 
     // Abbreviated dialing numbers (ADN)
@@ -67,61 +64,49 @@ public final class TelInfo {
     // Ciphering key sequence number
     // Emergency call code
     // Fixed dialing numbers (FDN)
-
+    //getDeviceId() Returns the unique device ID, for example, the IMEI for GSM and the MEID or ESN for CDMA phones.
+    private String sim1_IMEI;
+    private String sim2_IMEI;
     // Local area identity (LAI)
     private String sim1_LAI;
     private String sim2_LAI;
-
     // Location Area Code (LAC).
     private String sim1_LAC;
     private String sim2_LAC;
-
-    // CellID
-    private String sim1_CellID;
-    private String sim2_CellID;
 
 
     // Own dialing number
     // Temporary mobile subscriber identity (TMSI)
     // Routing area identifier (RIA) network code
     // Service dialing numbers (SDNs)
-
+    // CellID
+    private String sim1_CellID;
+    private String sim2_CellID;
     private List<CellInfo> all;
-    protected Sci[] scitems;
-    ArrayList<Sci> scitemsArr;
 
-
-    public boolean isSIM1Ready() {
-        return isSIM1Ready;
-    }
-
-    public boolean isSIM2Ready() {
-        return isSIM2Ready;
-    }
-
-    private boolean isDualSIM() {
-        return imsiSIM2 != null;
-    }
 
     private TelInfo() {
     }
-
 
     /*@
    @requires context != null;
    @ensures TelInfo != null;
       @*/
-    public static TelInfo getInstance(){//Context context) {
+    public static TelInfo getInstance() {//Context context) {
         //if (TelInfo.telInf != null) {
-            TelInfo.telInf = null;
-            TelInfo.telInf = new TelInfo();
+        TelInfo.telInf = null;
+        TelInfo.telInf = new TelInfo();
         //}
         Context context = getMActContext();
         //printTelephonyManagerMethodNamesForThisDevice(context);
-        System.out.println("1 " + context);
+        //System.out.println("1 " + context);
 
         TelephonyManager telMngr = ((TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE));
-        System.out.println("2 " + telMngr);
+        //System.out.println("2 " + telMngr);
+
+        //telInf.nci = new NeighboringCellInfo(NeighboringCellInfo.UNKNOWN_RSSI, new GsmCellLocation().toString(), TelephonyManager.NETWORK_TYPE_HSPA);
+        //System.out.println(telInf.nci.toString());
+
 
         telInf.sim1_ICCID = telMngr.getSimSerialNumber();
         telInf.sim1_IMSI = telMngr.getSubscriberId();
@@ -131,6 +116,7 @@ public final class TelInfo {
         telInf.sim1_MCC_MNC = telMngr.getSimOperator();
         telInf.sim1_MSISDN = telMngr.getLine1Number();
         telInf.sim1_IMEI = telMngr.getDeviceId();
+        //telInf.sim1_NC = telMngr.getNeighboringCellInfo();
 
         if (telMngr.getPhoneType() == TelephonyManager.PHONE_TYPE_GSM) {
             final GsmCellLocation location = (GsmCellLocation) telMngr.getCellLocation();
@@ -187,7 +173,7 @@ public final class TelInfo {
 
         telInf.scitemsArr.add(new Sci("SIM 1 state", telInf.sim1_STATE));
         telInf.scitemsArr.add(new Sci("Integrated circuit card identifier (ICCID)", telInf.sim1_ICCID));
-        telInf.scitemsArr.add(new Sci("Unique device ID (IMEI)", telInf.sim1_IMEI));
+        telInf.scitemsArr.add(new Sci("Unique device ID (IMEI or MEID/ESN for CDMA)", telInf.sim1_IMEI));
         telInf.scitemsArr.add(new Sci("International mobile subscriber identity (IMSI)", telInf.sim1_IMSI));
         telInf.scitemsArr.add(new Sci("Service provider name (SPN)", telInf.sim1_SPN));
         telInf.scitemsArr.add(new Sci("Mobile country code (MCC)", telInf.sim1_MCC));
@@ -201,7 +187,7 @@ public final class TelInfo {
             telInf.scitemsArr.add(new Sci(" ", " "));
             telInf.scitemsArr.add(new Sci("SIM 2 state", telInf.sim2_STATE));
             telInf.scitemsArr.add(new Sci("Integrated circuit card identifier (ICCID)", telInf.sim2_ICCID));
-            telInf.scitemsArr.add(new Sci("Unique device ID (IMEI)", telInf.sim2_IMEI));
+            telInf.scitemsArr.add(new Sci("Unique device ID (IMEI or MEID/ESN for CDMA)", telInf.sim2_IMEI));
             telInf.scitemsArr.add(new Sci("International mobile subscriber identity (IMSI)", telInf.sim2_IMSI));
             telInf.scitemsArr.add(new Sci("Service provider name (SPN)", telInf.sim2_SPN));
             telInf.scitemsArr.add(new Sci("Mobile country code (MCC)", telInf.sim2_MCC));
@@ -210,6 +196,10 @@ public final class TelInfo {
             telInf.scitemsArr.add(new Sci("Mobile station international subscriber directory number (MSISDN)", telInf.sim2_MSISDN));
             telInf.scitemsArr.add(new Sci("Location Area Code (LAC)", telInf.sim2_LAC));
             telInf.scitemsArr.add(new Sci("Cell Tower ID (CID)", telInf.sim2_CellID));
+
+
+            //telInf.scitemsArr.add(new Sci("NC (Neighboring Cell ", telInf.sim1_NC.toString() ));
+
         }
 
         return telInf;
@@ -280,7 +270,7 @@ public final class TelInfo {
             Object ob_phone = getSimID.invoke(telephony, obParameter);
 
             if (ob_phone != null) {
-                cloc = (GsmCellLocation)ob_phone;
+                cloc = (GsmCellLocation) ob_phone;
 
             }
         } catch (Exception e) {
@@ -318,26 +308,6 @@ public final class TelInfo {
         return isReady;
     }
 
-
-    private static class ITgerMethodNotFoundException extends Exception {
-        private static final long serialVersionUID = -996812356902545308L;
-
-        public ITgerMethodNotFoundException(String info) {
-            super(info);
-        }
-
-    }
-
-    @Override
-    public String toString() {
-        return "XXXXXXXXXXXXXXXX TelInfo{" +
-                "imsiSIM1='" + sim1_IMSI + '\'' +
-                ", imsiSIM2='" + imsiSIM2 + '\'' +
-                ", isSIM1Ready=" + isSIM1Ready +
-                ", isSIM2Ready=" + isSIM2Ready +
-                '}';
-    }
-
     public static void printTelephonyManagerMethodNamesForThisDevice(Context context) {
 
         TelephonyManager telephony = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
@@ -356,5 +326,36 @@ public final class TelInfo {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public boolean isSIM1Ready() {
+        return isSIM1Ready;
+    }
+
+    public boolean isSIM2Ready() {
+        return isSIM2Ready;
+    }
+
+    private boolean isDualSIM() {
+        return imsiSIM2 != null;
+    }
+
+    @Override
+    public String toString() {
+        return "XXXXXXXXXXXXXXXX TelInfo{" +
+                "imsiSIM1='" + sim1_IMSI + '\'' +
+                ", imsiSIM2='" + imsiSIM2 + '\'' +
+                ", isSIM1Ready=" + isSIM1Ready +
+                ", isSIM2Ready=" + isSIM2Ready +
+                '}';
+    }
+
+    private static class ITgerMethodNotFoundException extends Exception {
+        private static final long serialVersionUID = -996812356902545308L;
+
+        public ITgerMethodNotFoundException(String info) {
+            super(info);
+        }
+
     }
 }

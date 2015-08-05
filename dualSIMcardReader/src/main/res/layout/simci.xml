@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-
     android:id="@+id/SimCardItem"
-    android:orientation="vertical"
-    android:divider="@android:color/darker_gray"
-    android:contentDescription="Multi SIM Reader">
-    <!-- style="@android:style/Theme.Holo.Light"-->
+    android:layout_width="wrap_content"
 
+    android:layout_height="wrap_content"
+    android:contentDescription="Multi SIM Reader"
+    android:divider="@android:color/darker_gray"
+    android:orientation="vertical">
+    <!-- style="@android:style/Theme.Holo.Light"-->
 
 
     <TextView
@@ -31,8 +30,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/icon"
+        android:paddingLeft="20dp"
         android:singleLine="true"
-        android:text="Description"
-        android:paddingLeft="20dp" />
+        android:text="Description" />
 
 </LinearLayout>

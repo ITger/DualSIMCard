@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 class DualSIM_adapter extends ArrayAdapter<Sci> {
 
-   public DualSIM_adapter(Context context, ArrayList<Sci> items) {
+    public DualSIM_adapter(Context context, ArrayList<Sci> items) {
         super(context, R.layout.simci, items);
     }
 
